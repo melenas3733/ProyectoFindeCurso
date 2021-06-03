@@ -43,21 +43,24 @@
 
         <!--navegado-->
         <div class="navegador">
-            <ul class="nav nav-pills nav-fill" id="nav">
-                <li class="nav-item">
-                    <a class="nav-link btn-danger" href="#">Barras</a>
+        <span class="icono-menu" id="btn-menu"><i class="fas fa-bars"></i></span>
+
+        <nav class="main-nav" id="main-nav">
+            <ul class="nav nav-pills nav-fill menu" id="nav">
+                <li class="nav-item menu-item">
+                    <a class="nav-link btn-danger menu-link" href="#">Barras</a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link btn-danger" href="#">Pesas</a>
+                <li class="nav-item menu-item">
+                    <a class="nav-link btn-danger menu-link" href="#">Pesas</a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link btn-danger" href="#">Calzado</a>
+                <li class="nav-item menu-item">
+                    <a class="nav-link btn-danger menu-link" href="#">Calzado</a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link btn-danger" href="#">Suplementacion</a>
+                <li class="nav-item menu-item">
+                    <a class="nav-link btn-danger menu-link" href="#">Suplementacion</a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link btn-danger" href="#">Mayones</a>
+                <li class="nav-item menu-item">
+                    <a class="nav-link btn-danger menu-link" href="#">Mayones</a>
                 </li>
                
                 <?php
@@ -91,6 +94,7 @@
 
                     ?>
             </ul>
+        </nav>
 
         </div>
 

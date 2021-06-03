@@ -4,7 +4,18 @@
         function listarTodoslosProductos($conexion){
           $sql="SELECT * FROM Productos ";
           $resultado= mysqli_query($conexion,$sql);
+
           return  $resultado ;
+        }
+        function BuscarProductoPorID($conexion,$idProductos){
+          $sql='SELECT * FROM Productos where idProductos='.$idProductos;
+          $resultado= mysqli_query($conexion,$sql);
+         
+         return $row = mysqli_fetch_assoc($resultado);
+        
+         
+          
+         // return  $fila ;
         }
 
 
@@ -42,8 +53,8 @@
 
         }
 
-        function eliminarProductoNormal($conexion){
-            $sql = " DELETE FROM `productos` WHERE 0";
+        function eliminarProducto($conexion,$id){
+            $sql = 'DELETE FROM `productos` WHERE idProductos='.$id;
             $resultado = mysqli_query($conexion,$sql);
             return $resultado;
         }

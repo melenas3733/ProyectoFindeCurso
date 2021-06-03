@@ -34,26 +34,13 @@ $resultado = listarTodoslosProductos($conexion);
                                     <TH>Precio Venta</TH>
                                     <TH>Precio Compra</TH>
                                     <TH>Stock</TH>
-                                    <TH>Tipo Producto</TH>
-                                    <TH>PrecioOferta</TH>
+                                    <TH>Descripcionproducto</TH>
+                                    <TH>Tipo de Producto</TH>
+                                    <TH>Precio Ofertado</TH>
                                     <TH>Porcentaje Descuento</TH>
 
-                                </TR>
-                                <TR ALIGN=center>
-                                    <TD>1</TD>
-                                    <TD>2</TD>
-                                    <TD>3</TD>
-                                    <TD>1</TD>
-                                    <TD><input type="checkbox"></TD>
-                                    <TD><select name="menu">
-                                        <option>Selecciona..</option>
-                                        <option>Ofertado</option>
-                                        <option>Normal</option>
-                                    </select></TD>
-                                    <TD>1</TD>
-                                    <TD><input type="number"></TD>
-
                                 </TR>';
+                            
 
                                 if (mysqli_num_rows($resultado) == 0) {
                                     echo "No se han encontrado filas, nada a imprimir, asi que voy " .
@@ -71,7 +58,7 @@ $resultado = listarTodoslosProductos($conexion);
                                     echo '<TD>'.$fila["tipoProducto"].'</TD>';
                                     echo '<TD>'.$fila["precioOferta"].'</TD>';
                                     echo '<TD>'.$fila["porcentajeDescuento"].'</TD>';
-                                    echo '<TD> <button type="button" class="btn btn-success" href="EliminarProducto/'.$fila["idProductos"].'">Editar</button></TD>';
+                                    echo '<TD> <a  class="btn btn-success" href="http://localhost/(1)lospesistas/PHP/Services/borrarProducto.php?id='.$fila["idProductos"].'">Eliminar</a></TD>';
                                     echo '<TD> <button type="button" class="btn btn-success" href="EditarProducto/'.$fila["idProductos"].'">Editar</button></TD> </TR>';
                                     
                                
@@ -85,8 +72,8 @@ $resultado = listarTodoslosProductos($conexion);
                         
                             <div class="row">
                                 <div style="margin-left: 30%; margin-top: 5%;">
-    
-                                    <button type="button" class="btn btn-success ">Añadir Producto</button>
+                                <a href="http://localhost/(1)lospesistas/zonaAdmin/AdminAñadirProductos.php"  class="btn btn-success">Añadir Producto</a>
+                                   
                                 </div>
                             </div>
 

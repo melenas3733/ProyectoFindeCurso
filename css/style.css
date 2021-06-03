@@ -44,4 +44,11 @@ margin-right: 20%;
   margin-right: 10%;
 }
 
-
+@media screen and (min-width:500px){
+.main-nav{
+    visibility: visible;
+    opacity: 1;
+    width: 100%;
+    margin-top: 20px;
+}
+}

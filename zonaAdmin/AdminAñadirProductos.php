@@ -1,76 +1,7 @@
-<html lang="es">
+<?php 
+include '../header.php';
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Los Pesistas</title>
-
-    <!--boostrap 4.0 css-->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-
-    <!--css stilo propio-->
-    <link rel="stylesheet" href="../css/styleCarrito.css">
-
-    <!-- link css icons-->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
-
-    <!--Imagen favicon-->
-    <link rel="icon" href="../img/barrapesas.png" type="images">
-
-
-</head>
-
-<body>
-
-
-    <div class="container">
-        <!--Div contenedor principal de todo-->
-
-        <!--Logotipo-->
-        <div class="row">
-
-            <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 thumb ">
-                <!--usa las 12 columnas-->
-                <img class="rounded mx-auto d-block h-35" id="logo" src="../img/barrapesas.png">
-                <!--la classe img hace que se mueva al centro-->
-            </div>
-
-        </div>
-
-        <!--navegado-->
-        <div class="navegador">
-            <ul class="nav nav-pills nav-fill" id="nav">
-                <li class="nav-item">
-                    <a class="nav-link btn-danger" href="#">Barras</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link btn-danger" href="#">Pesas</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link btn-danger" href="#">Calzado</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link btn-danger" href="#">Suplementacion</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link btn-danger" href="#">Mayones</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link btn-blue" href="#">Administrar Categoria</a>
-                </li>
-
-                <li class="nav-item">
-                    <a class="nav-link btn-blue" href="#">Administrar Productos</a>
-                </li>
-
-                <li class="nav-item icono">
-                    <i class="fas fa-shopping-cart fa-1x fa-lg icono2" id="icono2"></i>
-                    <i class="far fa-user fa-1x fa-lg icono2" id="icono3"></i>
-                </li>
-            </ul>
-
-        </div>
+?>
 
         <!--Contenedor-->
         <div>
