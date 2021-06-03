@@ -4,8 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>registro</title>
-
+    <title>Iniciar Sesion</title>
     
     <!--Imagen favicon-->
     <link rel="icon" href="../img/barrapesas.png" type="images">
@@ -20,7 +19,7 @@
                 <!--Logotipo-->
                 <div class="row">
 
-                    <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 thumb "> <!--usa las 12 columnas-->                    
+                    <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 thumb "> <!--usa las 12 columnas-->
                         <a href="./../index.php">
                             <img class="rounded mx-auto d-block h-40" id="logo"  src="../img/barrapesas.png" > <!--la classe img hace que se mueva al centro-->
                         </a>
@@ -30,62 +29,37 @@
         
             <div class="contenedor "><!-- m-0 justify-content-center align-items-center vh-100 -->
                 <div class="contenedor2 col-xl-12 col-lg-12 col-md-12 col-sm-12">
-                    <h3>REGISTRARSE</h3>
-                    <form>
-                       
+                    <h3>Iniciar Sesion</h3>
+                    <form id="inicioSesion" name="Login" action="../PHP/Services/loguearUsuario.php" method="POST" class="needs-validation">
+                      
 
                             <div class="form-row">
 
-                            <div class="col-sm-12 col-md-4">  
-                                <label>Nombre: </label>
-                                <input type="text" placeholder ="Introduzca su Nombre" class="form-control" name="Nombre" id="Nombre">
-                                <div class="alert alert-danger" role="alert" hidden=true id="nombreError"></div>
-                            </div>
-
-                            <div class="col-sm-12 col-md-4">
-                                <label>Apellido:</label>
-                                <input type="text" placeholder ="Introduzca su Apellido" class="form-control" name="Apellido" id="Apellido">
-                                <div class="alert alert-danger" role="alert" hidden=true id="ApellidoError"></div>
-                            </div>
-
-                            <div class="col-sm-12 col-md-4">
-                                <label>Apellido2:</label>
-                                <input type="text" placeholder ="Introduzca su Apellido2" class="form-control" name="Apellido2" id="Apellido2">
-                                <div class="alert alert-danger" role="alert" hidden=true id="Apellido2Error"></div>
-                            </div>
-
-                            <div class="col-sm-12 col-md-6">
-                                <label>DNI:</label>
-                                <input type="text" placeholder ="numero y letra" class="form-control" name="DNI" id="DNI">
-                                <div class="alert alert-danger" role="alert" hidden=true id="dniError"></div>
-                            </div>
-
-                            <div class="col-sm-12 col-md-6">
+                            <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6 ">
                                 <label>Email:</label>
                                 <input type="email" placeholder ="outlock@mail.com" class="form-control" name="Email" id="Email">
                                 <div class="alert alert-danger" role="alert" hidden=true id="EmailError"></div>
                             </div>
 
-                            <div class="col-sm-12 col-md-6">
+                            <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6">
                                 <label>Contraseña:</label>
                                 <input type="password" placeholder ="minimo 8 caracteres" class="form-control" name="Contraseña" id="Contraseña">
                                 <div class="alert alert-danger" role="alert" hidden=true id="ContraseñaError"></div>
                             </div>
 
-                            <div class="col-sm-12 col-md-6">
-                                <label>Repite Contraseña:</label>
-                                <input type="password" placeholder ="Alumno_1" class="form-control" name="Contraseña2" id="Contraseña2">
-                                <div class="alert alert-danger" role="alert" hidden=true id="Contraseña2Error"></div>
+                            
+                            <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12" id="boton">
+                                <a href="recuperarContrasena.php" class="button">Recuperar contraseña</a>
                             </div>
 
                             <div class="col-sm-12 col-md-12" id="boton">
-                                <button type="submit" class="send btn btn-success">Registrar</button>
-                                <button type="submit" class="send btn btn-success"><a href="iniciarSesion.html" style="color: honeydew;"> Iniciar Sesion</a></button>
                                 
+                                <a href="./registro.php" class="send btn btn-success">Resgistrar</a>
+                                <button type="submit" class="send btn btn-success">Iniciar Sesion</button>
 
                             </div>
                             
-                        
+                      
                     </form>
                 </div>
             </div>
@@ -98,6 +72,6 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     <!--validar formulario-->
-    <script src="js/formularioRegistro.js"> </script>
+    <script src="js/validarIniciarSesion.js"> </script>
 </body>
 </html>

@@ -31,7 +31,7 @@
             <div class="contenedor "><!-- m-0 justify-content-center align-items-center vh-100 -->
                 <div class="contenedor2 col-xl-12 col-lg-12 col-md-12 col-sm-12">
                     <h3>REGISTRARSE</h3>
-                    <form>
+                    <form  id="RegistroCliente" name="Login" action="../PHP/Services/registrarcliente.php" method="POST" class="needs-validation">
                        
 
                             <div class="form-row">
@@ -80,7 +80,8 @@
 
                             <div class="col-sm-12 col-md-12" id="boton">
                                 <button type="submit" class="send btn btn-success">Registrar</button>
-                                <button type="submit" class="send btn btn-success"><a href="iniciarSesion.html" style="color: honeydew;"> Iniciar Sesion</a></button>
+                                <a href="./iniciarSesion.php" class="send btn btn-success">Iniciar Sesion</a>
+                                
                                 
 
                             </div>

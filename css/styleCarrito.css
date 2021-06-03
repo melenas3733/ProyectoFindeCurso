@@ -1,0 +1,54 @@
+    body{
+        background: url(../img/img-3840x2400.jpg);
+   
+    }
+    #footer{
+        position: fixed; 
+        left: 0; 
+        bottom: 0; 
+        width: 100%;
+    }
+    
+    #logo{
+        width: 30%; 
+        margin-top: 2%;
+    }
+    
+    #nav{
+        margin-bottom: 3%;
+        /*background-color: rgb(129, 127, 127);*/
+        border-radius: 60%;
+    
+    }
+    .nav-item{
+        margin-inline: 1%;
+        
+    }
+   
+    section {
+        display: -webkit-flex;
+        display: flex;
+  
+    }
+
+      
+        /*Style the content */
+    article {
+        /*-webkit-flex: 3;
+        -ms-flex: 3;
+        flex: 3;*/
+        background-color: #f1f1f1;
+        padding: 10px;
+    }
+
+    
+    /*.icono{
+        
+        color: blue;
+    }*/
+    .icono2{
+
+    margin-right: 10%;
+    }
+
+   

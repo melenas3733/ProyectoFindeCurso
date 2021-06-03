@@ -1,3 +1,14 @@
+body{
+    background: url(../img/img-3840x2400.jpg);
+   
+    
+}
+/*#footer{
+    position: fixed; 
+
+    width: 100%;
+    
+}*/
 #logo{
     width: 30%; 
     margin-top: 2%;
@@ -6,10 +17,31 @@
 #nav{
     margin-bottom: 3%;
     /*background-color: rgb(129, 127, 127);*/
-border-radius: 60%;
+    border-radius: 60%;
 
 }
+
+/*.grid-container{
+background: blue;
+text-align: end;
+margin-left: 20%;
+margin-right: 20%;
+
+}*/
+
 .nav-item{
     margin-inline: 1%;
+    grid-row-gap: 10%;
     
 }
+
+/*.icono{
+    
+    color: yellow;
+}*/
+.icono2{
+
+  margin-right: 10%;
+}
+
+
